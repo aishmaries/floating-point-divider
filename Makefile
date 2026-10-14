@@ -1,16 +1,18 @@
-.PHONY: all clean waveform.vcd		#runs these rules regardless of changes to dependencies
+.PHONY: all clean
 
 DIV = fp_divider.sv
+TB = tb_divider.sv
 OUT = build/output
+VCD = waveform.vcd
 
+all: $(VCD)
 
-all: build/waveform.vcd
-
-waveform.vcd: output
+$(VCD): $(OUT)
 	./$(OUT)
 
-output: $(DIV)
-	iverilog -Wall -g2012 -o $(OUT) $(DIV)
+$(OUT): $(DIV) $(TB)
+	mkdir -p build
+	iverilog -Wall -g2012 -o $(OUT) $(DIV) $(TB)
 
 clean:
-	rm $(OUT) build/waveform.vcd
+	rm -f $(OUT) $(VCD)
