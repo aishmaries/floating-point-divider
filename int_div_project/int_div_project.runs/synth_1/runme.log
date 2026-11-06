@@ -1,0 +1,263 @@
+
+*** Running vivado
+    with args -log int_divider_alt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source int_divider_alt.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Nov  4 21:41:48 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source int_divider_alt.tcl -notrace
+Command: synth_design -top int_divider_alt -part xcv80-lsva4737-2MHP-e-S -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcv80'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcv80'
+INFO: [Device 21-403] Loading part xcv80-lsva4737-2MHP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4025852
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3807.230 ; gain = 13.875 ; free physical = 207338 ; free virtual = 308918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'int_divider_alt' [/work/shared/users/ugrad/am3369/floating-point-divider/integer_divider/int_divider_alt.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'int_divider_alt' (0#1) [/work/shared/users/ugrad/am3369/floating-point-divider/integer_divider/int_divider_alt.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3888.199 ; gain = 94.844 ; free physical = 207244 ; free virtual = 308825
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3903.043 ; gain = 109.688 ; free physical = 207234 ; free virtual = 308815
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3903.043 ; gain = 109.688 ; free physical = 207234 ; free virtual = 308815
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3903.043 ; gain = 0.000 ; free physical = 207234 ; free virtual = 308815
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx-full/2025.1/Vivado/data/ip'.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Device 21-9335] Optimized delay calculation is enabled for this device.
+INFO: [Constraints 18-13227] Created floorplan with Advanced Flow Feature Set
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/work/shared/users/ugrad/am3369/floating-point-divider/int_div_project/int_div_project.srcs/constrs_1/new/constraints.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'vclk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/work/shared/users/ugrad/am3369/floating-point-divider/int_div_project/int_div_project.srcs/constrs_1/new/constraints.xdc:1]
+create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4292.172 ; gain = 110.188 ; free physical = 206957 ; free virtual = 308537
+Finished Parsing XDC File [/work/shared/users/ugrad/am3369/floating-point-divider/int_div_project/int_div_project.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Ipconfig 75-709] Read and Merge Traffic Stats:  Before Read: 0 insts (0 INI), 0 paths (0 INI). Read In: 0 insts (0 INI), 0 paths (0 INI). After Merge: 0 insts (0 INI), 0 paths (0 INI). 0 error slaves
+INFO: [Ipconfig 75-709] Read and Merge Traffic Stats:  Before Read: 0 insts (0 INI), 0 paths (0 INI). Read In: 6 insts (0 INI), 6 paths (0 INI). After Merge: 6 insts (0 INI), 6 paths (0 INI). 0 error slaves
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4306.047 ; gain = 0.000 ; free physical = 206942 ; free virtual = 308522
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+validate_noc  -part xcv80-lsva4737-2MHP-e-S
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4311.984 ; gain = 5.902 ; free physical = 206938 ; free virtual = 308519
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 4311.984 ; gain = 518.629 ; free physical = 206930 ; free virtual = 308511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcv80-lsva4737-2MHP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 4319.988 ; gain = 526.633 ; free physical = 206930 ; free virtual = 308511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 4319.988 ; gain = 526.633 ; free physical = 206930 ; free virtual = 308511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 4319.988 ; gain = 526.633 ; free physical = 206929 ; free virtual = 308511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   65 Bit       Adders := 32    
+	   3 Input   65 Bit       Adders := 32    
+	   2 Input   64 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input   65 Bit        Muxes := 31    
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 10848 (col length:150)
+BRAMs: 7482 (col length: RAMB18 456 RAMB36 228)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 4569.793 ; gain = 776.438 ; free physical = 206601 ; free virtual = 308182
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 5609.859 ; gain = 1816.504 ; free physical = 205611 ; free virtual = 307193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205297 ; free virtual = 306878
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `int_divider_alt`
+   Worst Slack before retiming is -38.543 ns and worst slack after retiming is -38.543 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `int_divider_alt' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205297 ; free virtual = 306879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+Reset retimingLOOKAHEAD8 0 at IO insertion phase
+INFO: [Synth 8-5816] Retiming module `int_divider_alt`
+   Worst Slack before retiming is -23.119 ns and worst slack after retiming is -23.119 ns
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `int_divider_alt' done
+
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205296 ; free virtual = 306877
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205296 ; free virtual = 306877
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205296 ; free virtual = 306877
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205296 ; free virtual = 306877
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205296 ; free virtual = 306877
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205296 ; free virtual = 306877
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |LOOKAHEAD8 |   319|
+|4     |LUT3       |    95|
+|5     |LUT4       |   456|
+|6     |LUT5       |   133|
+|7     |LUT6       |   296|
+|8     |LUT6CY     |  2142|
+|9     |LUT6       |   518|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205296 ; free virtual = 306877
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 5926.133 ; gain = 1723.836 ; free physical = 205296 ; free virtual = 306878
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 5926.133 ; gain = 2132.777 ; free physical = 205296 ; free virtual = 306878
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5926.133 ; gain = 0.000 ; free physical = 205456 ; free virtual = 307038
+INFO: [Netlist 29-17] Analyzing 2660 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'int_divider_alt' is not ideal for floorplanning, since the cellview 'int_divider_alt' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Device 21-9335] Optimized delay calculation is enabled for this device.
+INFO: [Constraints 18-13227] Created floorplan with Advanced Flow Feature Set
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Ipconfig 75-709] Read and Merge Traffic Stats:  Before Read: 0 insts (0 INI), 0 paths (0 INI). Read In: 0 insts (0 INI), 0 paths (0 INI). After Merge: 0 insts (0 INI), 0 paths (0 INI). 0 error slaves
+INFO: [Ipconfig 75-709] Read and Merge Traffic Stats:  Before Read: 0 insts (0 INI), 0 paths (0 INI). Read In: 6 insts (0 INI), 6 paths (0 INI). After Merge: 6 insts (0 INI), 6 paths (0 INI). 0 error slaves
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5969.070 ; gain = 0.000 ; free physical = 205458 ; free virtual = 307039
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2660 instances were transformed.
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 2142 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 518 instances
+
+Synth Design complete | Checksum: 8c55758b
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 5969.105 ; gain = 4124.789 ; free physical = 205457 ; free virtual = 307039
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 5179.527; main = 4992.076; forked = 315.936
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 7524.184; main = 5969.074; forked = 1598.047
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5993.082 ; gain = 0.000 ; free physical = 205456 ; free virtual = 307039
+INFO: [Common 17-1381] The checkpoint '/work/shared/users/ugrad/am3369/floating-point-divider/int_div_project/int_div_project.runs/synth_1/int_divider_alt.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file int_divider_alt_utilization_synth.rpt -pb int_divider_alt_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 21:43:58 2026...

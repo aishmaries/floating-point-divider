@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Nov  4 21:41:48 2026
+# Process ID         : 4025555
+# Current directory  : /work/shared/users/ugrad/am3369/floating-point-divider/int_div_project/int_div_project.runs/synth_1
+# Command line       : vivado -log int_divider_alt.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source int_divider_alt.tcl
+# Log file           : /work/shared/users/ugrad/am3369/floating-point-divider/int_div_project/int_div_project.runs/synth_1/int_divider_alt.vds
+# Journal file       : /work/shared/users/ugrad/am3369/floating-point-divider/int_div_project/int_div_project.runs/synth_1/vivado.jou
+# Running On         : zhang-22.ece.cornell.edu
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux release 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) Gold 6242 CPU @ 2.80GHz
+# CPU Frequency      : 2800.000 MHz
+# CPU Physical cores : 32
+# CPU Logical cores  : 64
+# Host memory        : 403574 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 407869 MB
+# Available Virtual  : 326789 MB
+#-----------------------------------------------------------
+source int_divider_alt.tcl -notrace
+validate_noc  -part xcv80-lsva4737-2MHP-e-S
